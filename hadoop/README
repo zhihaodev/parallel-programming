@@ -1,0 +1,12 @@
+Please configure the path of Hadoop correctly in the Makefile first.
+
+Compile or the java code:
+	make
+Clean all .jar and .class files:
+	make clean
+
+(The makefile is based on the reference: http://vichargrave.com/makefile-for-hadoop-wordcount-example-application/)
+
+
+
+To run the code(both the streaming version and the jar verion), just follow the requirement of this assignment.

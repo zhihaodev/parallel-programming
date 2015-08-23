@@ -1,0 +1,21 @@
+Compile the code:
+	type "make"
+
+Run the program:
+	type "java CoinFlip 4 10000"
+		or
+	type "java BruteForceDES 4 16"
+
+Clean executables:
+	type "make clean"
+
+
+------------------------------------------------------------------------------------------
+Design:
+
+CoinFlip:
+Every thread has its private variable to count the number of heads. They have no shared variables and there is no critical sections. I sum up their numbers of heads after join() is called.
+I use ThreadLocalRandom instead of Random to improve parallel efficiency.
+
+BruteForceDES:
+All threads have no shared state, variables, or objects. Each thread runs the same number of iterations during void run().

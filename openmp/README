@@ -1,0 +1,14 @@
+Compile the code:
+	type "make"
+
+Run the program:
+	type "./filter"
+
+Clean executables:
+	type "make clean"
+
+
+When you run the program, you will be promted to input one digit to execute corresponding part of codes.
+1: Loop efficiency; 2: Parallel speedup; 3: Parallel scaleup; 4: Optimized verion speedup; 5: Optimized version scaleup
+
+Note that you need to mannually change the values of DATA_LEN and omp_set_num_threads(n) to generate all data for scaleup plotting.
